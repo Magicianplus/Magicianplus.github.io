@@ -1,151 +1,97 @@
 # ---------------- #
 #   Main Configs   #
+#   主要配置        #
 # ---------------- #
-baseurl:
-url: https://piterjia.github.io
-date_format: "ordinal"
-title: 云码
-subtitle: "Code can change the world, We change code!"
-description: "全栈技术开发、业余技术管理、足球爱好者。"
-keywords: hongjun, jnger, java, 全栈, python, android, iOS, spring
-timezone: China/Tianjin
-encoding: "utf-8"
-side_bar_repo_limit: 5
-repository: piterjia/piterjia.github.io
+baseurl: # 基础 URL（一般保持为空）
+url: https://piterjia.github.io # 网站的完整 URL，发布后会指向该地址
+date_format: "ordinal" # 日期格式
+title: 云码 # 网站标题，可修改为你自己的博客名称
+subtitle: "Code can change the world, We change code!" # 网站副标题，可修改为你的描述
+description: "全栈技术开发、业余技术管理、足球爱好者。" # 网站描述，用于 SEO
+keywords: hongjun, jnger, java, 全栈, python, android, iOS, spring # 关键词，利于搜索引擎收录
+timezone: China/Tianjin # 时区设置，建议保持与你所在的时区一致
+encoding: "utf-8" # 编码格式
+side_bar_repo_limit: 5 # 侧边栏显示的仓库数量
+repository: piterjia/piterjia.github.io # 仓库地址
+
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
-    jsdelivr:
-        enabled: true
+  jsdelivr:
+    enabled: true # 是否启用 jsdelivr 加速
+
 # 组件配置
 components:
-    # 分享
-    share:
-        enabled: false
-    # 不蒜子访问统计
-    busuanzi:
-        enabled: true
-        start_date: 2020-05-03
-# 压缩页面内容
-compress_html:
-  clippings: all
-  comments: ["<!--", "-->"]
+  # 不蒜子访问统计
+  busuanzi:
+    enabled: true # 是否启用不蒜子统计访问量
+    start_date: 2020-05-03 # 开始统计日期
 
 # ---------------- #
 #      Author      #
+#    作者信息       #
 # ---------------- #
-author: Piter Jia
-organization: 
-organization_url: 
-github_username: piterjia
-location: Tianjin, China
-email: jiahongjun86@126.com
+author: Piter Jia # 作者名，可修改为你的名字
+location: Tianjin, China # 所在地信息
+email: jiahongjun86@126.com # 邮箱地址
 
 # ---------------- #
 #    Navigation    #
+#     导航栏配置   #
 # ---------------- #
 navs:
   -
     href: /
-    label: 首页
-
+    label: 首页 # 首页链接
   -
     href: /categories/
-    label: 分类
-
-  # -
-  #   href: /management/
-  #   label: 技术管理
-
-#   -
-#     href: /open-source/
-#     label: 开源
-
+    label: 分类 # 分类页面链接
   -
     href: /wiki/
-    label: 维基
-
+    label: 维基 # 维基页面链接
   -
     href: /links/
-    label: 链接
-
+    label: 链接 # 链接页面
   -
     href: /about/
-    label: 关于
-
-# ---------------- #
-#       RSS        #
-# ---------------- #
-subscribe_rss: /feed.xml
+    label: 关于 # 关于页面
 
 # ---------------- #
 #      Jekyll      #
+#    Jekyll配置    #
 # ---------------- #
-markdown: kramdown
-kramdown:
-    input: GFM
-highlighter: rouge
-paginate: 10
-lsi: false
-quiet: false
-excerpt_separator: "\n\n"
-permalink: /:year/:month/:day/:title/
+markdown: kramdown # 使用的 Markdown 解析器
+highlighter: rouge # 代码高亮的插件
+paginate: 10 # 每页显示的文章数量
+permalink: /:year/:month/:day/:title/ # 文章链接格式
 plugins:
-    - jekyll-github-metadata
-    - rouge
-#     - jekyll-html-pipeline
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
-#     - jekyll-mentions
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
+  - jekyll-paginate # 分页插件
+  - jekyll-sitemap # 生成 sitemap
+  - jekyll-feed # 生成 RSS feed
+  - jemoji # 支持 Emoji 表情
 
 # ---------------- #
 #      Comments    #
+#    评论系统配置  #
 # ---------------- #
-# support provider: disqus, gitment, gitalk
+# 使用 Gitalk 作为评论系统，需要配置 GitHub 应用的信息
 comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username: 
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: piterjia
-    repo: blog-comments
-    oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
-# https://github.com/gitalk/gitalk#install
-# 参考：https://www.ppkanshu.com/index.php/post/4158.html
 gitalk:
-    owner: piterjia
-    repo: blog-comments
-    clientID: db388e97352eeaeafb30
-    clientSecret: 14e93c15b35acb7ec88633e88c94154bdf8e847c
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
+  owner: piterjia # GitHub 用户名，修改为你的用户名
+  repo: blog-comments # 用于存储评论的仓库，需先在 GitHub 上创建
+  clientID: db388e97352eeaeafb30 # GitHub OAuth 应用的 clientID
+  clientSecret: 14e93c15b35acb7ec88633e88c94154bdf8e847c # GitHub OAuth 应用的 clientSecret
 
 # ---------------- #
 #      Search      #
+#    搜索功能配置  #
 # ---------------- #
 simple_jekyll_search:
-    # 是否支持全文搜索
-    fulltext: false
-    # 最多显示多少条搜索结果
-    limit: 10
+  fulltext: false # 是否启用全文搜索
+  limit: 10 # 最多显示的搜索结果数量
 
 # ---------------- #
 #      Google      #
+#    Google相关配置 #
 # ---------------- #
 google:
-    analytics_id: UA-80669434-1
-    adsense:
-        footer: true
-        sidebar: true 
-        content_header: true
-        content_footer: false
+  analytics_id: UA-80669434-1 # Google Analytics 追踪 ID
