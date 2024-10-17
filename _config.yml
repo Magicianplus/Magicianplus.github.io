@@ -1,6 +1,5 @@
 # ---------------- #
 #   Main Configs   #
-#   主要配置        #
 # ---------------- #
 baseurl: # 基础 URL（一般保持为空）
 url: https://magicianplus.github.io # 网站的完整 URL，发布后会指向该地址
@@ -15,67 +14,109 @@ timezone: China/Taiyuan # 修改为你所在的时区 # 时区设置，建议保
 encoding: "utf-8" # 编码格式
 side_bar_repo_limit: 5 # 侧边栏显示的仓库数量
 repository: magicianplus/magicianplus.github.io # 替换为你的 GitHub 仓库路径 # 仓库地址
-
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
-  jsdelivr:
-    enabled: true # 是否启用 jsdelivr 加速
-
+    jsdelivr:
+        enabled: true
 # 组件配置
 components:
-  # 不蒜子访问统计
-  busuanzi:
-    enabled: true # 是否启用不蒜子统计访问量
-    start_date: 2020-05-03 # 开始统计日期
+    # 分享
+    share:
+        enabled: false
+    # 不蒜子访问统计
+    busuanzi:
+        enabled: true
+        start_date: 2020-05-03
+# 压缩页面内容
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
 
 # ---------------- #
 #      Author      #
-#    作者信息       #
 # ---------------- #
 author: YYJ # 作者名，可修改为你的名字
 location: 山西, 中国 # 修改为你的所在地 # 所在地信息
 email: 1986388918@qq.com # 邮箱地址
+organization: 
+organization_url: 
+github_username: Magicianplus
 
 # ---------------- #
 #    Navigation    #
-#     导航栏配置   #
 # ---------------- #
 navs:
   -
     href: /
-    label: 首页 # 首页链接
+    label: 首页
+
   -
     href: /categories/
-    label: 分类 # 分类页面链接
+    label: 分类
+
+  # -
+  #   href: /management/
+  #   label: 技术管理
+
+#   -
+#     href: /open-source/
+#     label: 开源
+
   -
     href: /wiki/
-    label: 维基 # 维基页面链接
+    label: 维基
+
   -
     href: /links/
-    label: 链接 # 链接页面
+    label: 链接
+
   -
     href: /about/
-    label: 关于 # 关于页面
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
 
 # ---------------- #
 #      Jekyll      #
-#    Jekyll配置    #
 # ---------------- #
-markdown: kramdown # 使用的 Markdown 解析器
-highlighter: rouge # 代码高亮的插件
-paginate: 10 # 每页显示的文章数量
-permalink: /:year/:month/:day/:title/ # 文章链接格式
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
 plugins:
-  - jekyll-paginate # 分页插件
-  - jekyll-sitemap # 生成 sitemap
-  - jekyll-feed # 生成 RSS feed
-  - jemoji # 支持 Emoji 表情
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
 # ---------------- #
 #      Comments    #
-#    评论系统配置  #
 # ---------------- #
-# 使用 Gitalk 作为评论系统，需要配置 GitHub 应用的信息
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: 
+# https://imsun.net/posts/gitment-introduction/
+
 comments_provider: gitalk
 gitalk:
   owner: magicianplus # GitHub 用户名，修改为你的用户名
@@ -83,17 +124,24 @@ gitalk:
   clientID: Ov23li2ltGxIAnQT6trk  # GitHub OAuth 应用的 clientID
   clientSecret: 14d24f19d085d456404d9772505351d3e3773492 # GitHub OAuth 应用的 clientSecret
 
+lazy_load_disqus : false
+
 # ---------------- #
 #      Search      #
-#    搜索功能配置  #
 # ---------------- #
 simple_jekyll_search:
-  fulltext: false # 是否启用全文搜索
-  limit: 10 # 最多显示的搜索结果数量
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
 
 # ---------------- #
 #      Google      #
-#    Google相关配置 #
 # ---------------- #
 google:
-  analytics_id: UA-80669434-1 # Google Analytics 追踪 ID
+    analytics_id: UA-80669434-1
+    adsense:
+        footer: true
+        sidebar: true 
+        content_header: true
+        content_footer: false
