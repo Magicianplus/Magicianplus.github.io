@@ -1,29 +1,20 @@
-- name: Software Engineer Keywords
+- name: 语言
   keywords:
-      - Java
-      - Python
-      - Java Script
-      - Shell
-      - Linux
-      - Design Patterns
-      - Spring
-      - Spring Boot
       - C
+      - C++
+      - Python
+      - Java
+      - Shell
+      - HTML
+      - CSS
 
 
-- name: Mobile Developer Keywords
+- name: 工程
   keywords:
-      - Android
-      - iOS
-      - Mini Program
-      - Web
+      - STM32
+      - Qt
 
-- name: Others
+- name: 其他
   keywords:
-      - 技术管理
-      - 微服务
-      - 数据库
-      - 中间件
-      - 分布式
-      - 高并发
+      - Linux
       

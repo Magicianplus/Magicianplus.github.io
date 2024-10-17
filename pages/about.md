@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About
-description: 分享技术成长，管理心得。
-keywords: Hongjun Jia, 贾洪军
+title: 学习博客
+description: 分享学习路程，心得体会。
+keywords: YaJun Yang, 杨亚军
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是Piter Jia，分享技术成长，管理心得。
+我是Magician，分享学习笔记，日常内容。
 
-仰慕「优雅编码的艺术」。
+来自山西农业大学无人机创新团队。
 
 
 ## 联系
