@@ -22,7 +22,7 @@ permalink: /about/
 </ul>
 
 
-## Skill Keywords
+## 技能
 
 {% for skill in site.data.skills %}
 ### {{ skill.name }}
