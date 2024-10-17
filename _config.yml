@@ -3,16 +3,18 @@
 #   主要配置        #
 # ---------------- #
 baseurl: # 基础 URL（一般保持为空）
-url: https://piterjia.github.io # 网站的完整 URL，发布后会指向该地址
+url: https://magicianplus.github.io # 网站的完整 URL，发布后会指向该地址
 date_format: "ordinal" # 日期格式
-title: 云码 # 网站标题，可修改为你自己的博客名称
-subtitle: "Code can change the world, We change code!" # 网站副标题，可修改为你的描述
-description: "全栈技术开发、业余技术管理、足球爱好者。" # 网站描述，用于 SEO
-keywords: hongjun, jnger, java, 全栈, python, android, iOS, spring # 关键词，利于搜索引擎收录
-timezone: China/Tianjin # 时区设置，建议保持与你所在的时区一致
+title: 编程组 # 网站标题，可修改为你自己的博客名称
+subtitle: "山西农业大学无人机创新团队编程组知识博客" # 网站副标题，可修改为你的描述
+description: "我们是一个充满热情与活力的团队，专注于无人机技术的创新与应用。在这里，我们将共同学习C语言和STM32微控制器的相关知识，为未来的项目开发奠定坚实的基础。
+我们的目标是通过在编程组的深入学习，不断提高自己的知识水平和动手能力。我们将积极参与各类项目研发和学科竞赛，在实践中锻炼自己，追求卓越。
+期待与你一起分享学习心得和项目经验，共同成长！" # 网站描述，用于 SEO
+keywords: 编程, 无人机, C语言, STM32, 技术博客 # 关键词，利于搜索引擎收录
+timezone: China/Taiyuan # 修改为你所在的时区 # 时区设置，建议保持与你所在的时区一致
 encoding: "utf-8" # 编码格式
 side_bar_repo_limit: 5 # 侧边栏显示的仓库数量
-repository: piterjia/piterjia.github.io # 仓库地址
+repository: magicianplus/magicianplus.github.io # 替换为你的 GitHub 仓库路径 # 仓库地址
 
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
@@ -30,9 +32,9 @@ components:
 #      Author      #
 #    作者信息       #
 # ---------------- #
-author: Piter Jia # 作者名，可修改为你的名字
-location: Tianjin, China # 所在地信息
-email: jiahongjun86@126.com # 邮箱地址
+author: YYJ # 作者名，可修改为你的名字
+location: 山西, 中国 # 修改为你的所在地 # 所在地信息
+email: 1986388918@qq.com # 邮箱地址
 
 # ---------------- #
 #    Navigation    #
@@ -76,10 +78,10 @@ plugins:
 # 使用 Gitalk 作为评论系统，需要配置 GitHub 应用的信息
 comments_provider: gitalk
 gitalk:
-  owner: piterjia # GitHub 用户名，修改为你的用户名
-  repo: blog-comments # 用于存储评论的仓库，需先在 GitHub 上创建
-  clientID: db388e97352eeaeafb30 # GitHub OAuth 应用的 clientID
-  clientSecret: 14e93c15b35acb7ec88633e88c94154bdf8e847c # GitHub OAuth 应用的 clientSecret
+  owner: magicianplus # GitHub 用户名，修改为你的用户名
+  repo: blog_comments # 用于存储评论的仓库，需先在 GitHub 上创建
+  clientID: Ov23li2ltGxIAnQT6trk  # GitHub OAuth 应用的 clientID
+  clientSecret: 14d24f19d085d456404d9772505351d3e3773492 # GitHub OAuth 应用的 clientSecret
 
 # ---------------- #
 #      Search      #
