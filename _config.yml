@@ -2,10 +2,10 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://piterjia.github.io
+url: Https://magicianplus.github.io
 date_format: "ordinal"
-title: 云码
-subtitle: "Code can change the world, We change code!"
+title: 编程组
+subtitle: "山西农业大学编程组"
 description: "全栈技术开发、业余技术管理、足球爱好者。"
 keywords: hongjun, jnger, java, 全栈, python, android, iOS, spring
 timezone: Asia/Shanghai
@@ -115,18 +115,18 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: piterjia
-    repo: blog-comments
+    owner: magicianplus
+    repo: blog_comments
     oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+        client_id: Ov23li2ltGxIAnQT6trk
+        client_secret: 14d24f19d085d456404d9772505351d3e3773492
 # https://github.com/gitalk/gitalk#install
 # 参考：https://www.ppkanshu.com/index.php/post/4158.html
 gitalk:
-    owner: piterjia
-    repo: blog-comments
-    clientID: db388e97352eeaeafb30
-    clientSecret: 14e93c15b35acb7ec88633e88c94154bdf8e847c
+    owner: magicianplus
+    repo: blog_comments
+    clientID: Ov23li2ltGxIAnQT6trk
+    clientSecret: 14d24f19d085d456404d9772505351d3e3773492
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
