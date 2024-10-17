@@ -2,16 +2,16 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://magicianplus.github.io
+url: https://piterjia.github.io
 date_format: "ordinal"
-title: 编程组
-subtitle: "山西农业大学无人机创新团队编程组知识博客"
-description: "我们是一个充满热情与活力的团队，专注于无人机技术的创新与应用。"
-keywords: hongjun, jnger, java, 编程, 无人机, C语言, STM32, 技术博客
-timezone: China/Taiyuan
+title: 云码
+subtitle: "Code can change the world, We change code!"
+description: "全栈技术开发、业余技术管理、足球爱好者。"
+keywords: hongjun, jnger, java, 全栈, python, android, iOS, spring
+timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
-repository: magicianplus/magicianplus.github.io
+repository: piterjia/piterjia.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
@@ -149,3 +149,6 @@ google:
         sidebar: true 
         content_header: true
         content_footer: false
+
+github_token: YOUR_PERSONAL_ACCESS_TOKEN
+
