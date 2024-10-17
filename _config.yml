@@ -4,10 +4,10 @@
 baseurl:
 url: https://magicianplus.github.io
 date_format: "ordinal"
-title: 云码
-subtitle: "Code can change the world, We change code!"
-description: "全栈技术开发、业余技术管理、足球爱好者。"
-keywords: hongjun, jnger, java, 全栈, python, android, iOS, spring
+title: 编程组
+subtitle: "山西农业大学无人机创新团队编程组"
+description: "编程"
+keywords: C, STM32, java, 全栈, python, android, iOS, spring
 timezone: China/Tianjin
 encoding: "utf-8"
 side_bar_repo_limit: 5
