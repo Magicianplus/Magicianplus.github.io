@@ -4,9 +4,9 @@
 baseurl:
 url: https://magicianplus.github.io
 date_format: "ordinal"
-title: 编程组
-subtitle: "无人机创新团队编程组"
-description: "我们是一个充满热情与活力的团队，专注于无人机技术的创新与应用。在这里，我们将共同学习C语言和STM32微控制器的相关知识，为未来的项目开发奠定坚实的基础。我们的目标是通过在编程组的深入学习，不断提高自己的知识水平和动手能力。我们将积极参与各类项目研发和学科竞赛，在实践中锻炼自己，追求卓越。期待与你一起分享学习心得和项目经验，共同成长！"
+title: 研发部
+subtitle: "研发部学习博客"
+description: "这些笔记都是通过自学自编的，大家学习的时候可以参考我的笔记并撰写自己合适的笔记，与君共勉，共同进步，并在这条路上越走越远。"
 keywords: C, STM32, java, 全栈, python, android, iOS, spring
 timezone: China/Tianjin
 encoding: "utf-8"
